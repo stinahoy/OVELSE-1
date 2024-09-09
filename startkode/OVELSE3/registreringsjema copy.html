@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <main>
+                <section>
+                <label for="navn">Navn:</label>
+                navn:
+                <input type="tekst" name="navn" placeholder="Nora Nordman" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <label>
+                E-post:
+                <input type="email" required>
+                </label>
+                <label>
+                Passord:
+                <input type="passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+                <label>
+                Alder:
+                <input type="tall"type="number" min="18" max="99" required>
+                </label>
+                Kjønn:
+                Mann:
+                <input type="radio" name="valg">
+                 </label>
+                <label>
+                kvinne:
+                <input type="radio" name="valg">
+                </label>
+                <label>
+                Annet:
+                <input type="radio" name="valg">
+                </label>
+                <input type="submit" value="Send melding">
+                <label>
+                <input type="rullegardinmeny">
+                </label>
+                </section>
+            </main>
+        </header>
+    </body>
+</html>
